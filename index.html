@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Code Challenge</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css">
+  <link rel="stylesheet" href="assets/index.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="heading">
+    <div class="item">
+      <!-- FLATDANGO heading -->
+      <h2 class="ui header">
+        <div class="content">FLATDANGO</div>
+        <div class="sub header" id="subtitle">BUY MOVIE TICKETS</div>
+      </h2>
+    </div>
+  </div>
+
+ <!-- Menu of all movies -->
+  <div class="ui centered grid">
+    <div class="four wide column">
+      <div class="list-container">
+
+       <!-- Side menu for movie titles -->
+        <ul class="ui divided list" id="films">
+          <!-- Movie titles will go here -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- Poster -->
+    <div class="four wide column">
+      <!-- Placeholder image for movie poster -->
+      <img id="poster" 
+      src="assets/placeholderImage.png"
+      alt="[MOVIE TITLE]">
+    </div>
+
+   <!-- Showing movie details column -->
+    <div class="four wide column">
+      <div class="ui cards" id="showing">
+        <div class="card">
+           <!-- Movie title -->
+          <div id="title" class="title">[MOVIE TITLE]</div>
+          <!-- Movie runtime -->
+          <div id="runtime" class="meta">[RUNTIME] minutes</div>
+          <div class="content">
+             <!-- Movie description -->
+            <div class="description" id="film-info">[INSERT MOVIE DESCRIPTION HERE]</div>
+            <!-- Movie showtime -->
+            <span id="showtime" class="ui label">[SHOWTIME]</span>
+           <!-- Remaining tickets --> 
+            <span id="ticket-num">[X]</span> remaining tickets
+          </div>
+           <!-- Buy ticket button -->
+          <div class="extra content">
+            <button id="buy-ticket" class="ui orange button">Buy Ticket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <!-- Include custom JavaScript file -->
+  <script src="src/index.js"></script>
+</body>
+</html>
